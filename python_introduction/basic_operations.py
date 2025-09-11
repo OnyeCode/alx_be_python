@@ -1,4 +1,5 @@
-number1, number2 = 10, 5
+number1 = 10
+number2 = 5
 Sum = number1 + number2
 Diff = number1 - number2
 Prod = number1 * number2
