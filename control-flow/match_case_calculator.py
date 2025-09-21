@@ -13,4 +13,4 @@ match operation:
         if num2 == 0:
             print("Cannot divide by zero.")
         else:
-            print(f" The result is {eval('num1 / num2')}")
+            print(f" The result is {eval('num1 // num2')}")
