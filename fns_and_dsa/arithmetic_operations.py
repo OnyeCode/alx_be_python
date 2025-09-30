@@ -9,5 +9,7 @@ def perform_operation(num1, num2, operation):
 		case 'divide':
 			if num2 == 0:
 				print("Non zero division")
-                        else:
+                        elif num2:
                                 return (num1 / num2)
+                        else:
+                            pass
