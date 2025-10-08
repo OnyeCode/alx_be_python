@@ -9,10 +9,10 @@ class Book:
             return False
         return True
 
-    def return_back(self):
+    def return_book(self):
         self._is_checked_out = False
 
-    def check_out(self):
+    def check_out_book(self):
         self._is_checked_out = True
 
 class Library:
@@ -26,12 +26,12 @@ class Library:
     def check_out_book(self, title):
         for book in self._books:
             if book.title.lower() == title and book.is_available():
-                book.check_out()
+                book.check_out_book()
 
     def return_book(self, title):
         for book in self._books:
             if book.title.lower() == title and not book.is_available():
-                book.return_back()
+                book.return_book()
 
     def list_available_books(self):
         for book in self._books:
